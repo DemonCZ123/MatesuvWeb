@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matesův web</title>
+    <meta name="description" content="Toto je blog kanálu Matesův Pohled.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="queries.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+    <!--HEADER-->
+    <section class="headerSec">
+        <header>
+            <img class="logo" src="img/mates_logo.png" alt="Matesův pohled logo">
+            <nav>
+                <ul class="navLinks">
+                    <li><a href="#">O mně</a></li>
+                    <li><a href="#">O Blogu</a></li>
+                    <li><a href="#">Kontakt</a></li>
+                </ul>
+            </nav>
+            <div class="navSoc">
+                <a class="navYT" href="https://www.youtube.com/channel/UCUQPbf1z2b13KbeH_riUCnQ" target="_blank"><img src="img/youtube-logo.svg" alt="Tlačítko YouTube"></a>
+                <a class="navIG" href="https://www.instagram.com/matesuvpohled/" target="_blank"><img src="img/instagram-logo.svg" alt="Tlačítko Instagram"></a>
+            </div>
+            <a onclick="openNav()" href="#"><img class="menu" src="img/mobHamburger.svg" alt=""></a>
+        </header>
+
+        <div id="mobileMenu" class="overlay">
+            <a class="close" onclick="closeNav()">&times;</a>
+            <div class="overlayContent">
+                <a href="#">O mně</a>
+                <a href="#">O Blogu</a>
+                <a href="#">Kontakt</a>
+                <div class="navSocMenu">
+                    <a class="navYT" href="https://www.youtube.com/channel/UCUQPbf1z2b13KbeH_riUCnQ" target="_blank"><img src="img/youtube-logo.svg" alt="Tlačítko YouTube"></a>
+                    <a class="navIG" href="https://www.instagram.com/matesuvpohled/" target="_blank"><img src="img/instagram-logo.svg" alt="Tlačítko Instagram"></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--MAIN-->
+    <div class="gallery">
+			<div class="img">
+				<img src="img/picture-blog-1.jpg" alt="">
+			</div>
+			<div class="img">
+				<img src="img/picture-blog-1.jpg" alt="">
+			</div>
+			<div class="img">
+				<img src="img/picture-blog-1.jpg" alt="">
+			</div>
+			<div class="img">
+				<img src="img/picture-blog-1.jpg" alt="">
+			</div>
+			<div class="img">
+				<img src="img/picture-blog-1.jpg" alt="">
+			</div>
+			<div class="img">
+				<img src="img/picture-blog-1.jpg" alt="">
+			</div>
+			<div class="img">
+				<img src="img/picture-blog-1.jpg" alt="">
+			</div>
+		</div>
+    
+    <main>
+       <div class="mainSec">
+           <div class="filterNav">
+               <div class="containerCategory">
+                   <div class="select-box">
+                       <div class="options-container">
+                           <div class="option">
+                               <input type="radio" class="radio" id="all" name="category" />
+                               <label for="all">Vše</label>
+                           </div>
+
+                           <div class="option">
+                               <input type="radio" class="radio" id="bilaHul" name="category" />
+                               <label for="bilaHul">Život s bílou holí</label>
+                           </div>
+
+                           <div class="option">
+                               <input type="radio" class="radio" id="audiohry" name="category" />
+                               <label for="audiohry">Audiohry</label>
+                           </div>
+
+                           <div class="option">
+                               <input type="radio" class="radio" id="hudba" name="category" />
+                               <label for="hudba">Hudba</label>
+                           </div>
+
+                           <div class="option">
+                               <input type="radio" class="radio" id="for" name="category" />
+                               <label for="for">Nedělní fór</label>
+                           </div>
+
+                           <div class="option">
+                               <input type="radio" class="radio" id="povidky" name="category" />
+                               <label for="povidky">Povídky</label>
+                           </div>
+
+                           <div class="option">
+                               <input type="radio" class="radio" id="historie" name="category" />
+                               <label for="historie">Historie</label>
+                           </div>
+                       </div>
+
+                       <div class="selected">
+                           Vyber kategorii
+                       </div>
+                   </div>
+               </div>
+           </div>
+           
+           
+           <div class="cards">
+            <div class="card blog__item bilaHul">
+                <a href="">
+                    <img class="card__image" src="img/picture-blog-6.jpg" alt="">
+                    <div class="card__content">
+                        <h2>Lorem Ipsum</h2>
+                        <br>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos ducimus id ab tenetur delectus reiciendis fugit autem qui at.
+                        </p>
+                        <p>
+                            Alias itaque praesentium eum, pariatur consequatur ducimus asperiores accusantium velit minima?
+                        </p>
+                        <br>
+                        <p class="date__article">Publikováno: 6. února 2021, 14:00 | Život s bílou holí</p>
+                    </div>
+                </a>
+                <div class="card__info">
+                    <div>
+                        <i class="material-icons" style="">thumb_up</i>1
+                        <i style="padding-right: 10px"></i>
+                        <i class="material-icons">thumb_down</i>1
+                    </div>
+                    <div>
+                    </div>
+                </div>
+            </div>
+            <div class="card blog__item audiohry">
+                <a href="">
+                    <img class="card__image" src="img/picture-blog-1.jpg" alt="">
+                    <div class="card__content">
+                        <h2>Lorem Ipsum</h2>
+                        <br>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos ducimus id ab tenetur delectus reiciendis fugit autem qui at.
+                        </p>
+                        <p>
+                            Alias itaque praesentium eum, pariatur consequatur ducimus asperiores accusantium velit minima?
+                        </p>
+                        <br>
+                        <p class="date__article">Publikováno: 6. února 2021, 14:00 | Audiohry</p>
+                    </div>
+                </a>
+                <div class="card__info">
+                    <div>
+                        <i class="material-icons" style="">thumb_up</i>1
+                        <i style="padding-right: 10px"></i>
+                        <i class="material-icons">thumb_down</i>1
+                    </div>
+                    <div>
+                    </div>
+                </div>
+            </div>
+            <div class="card blog__item hudba">
+                <a href="">
+                    <img class="card__image" src="img/picture-blog-2.jpg" alt="">
+                    <div class="card__content">
+                        <h2>Lorem Ipsum</h2>
+                        <br>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos ducimus id ab tenetur delectus reiciendis fugit autem qui at.
+                        </p>
+                        <p>
+                            Alias itaque praesentium eum, pariatur consequatur ducimus asperiores accusantium velit minima?
+                        </p>
+                        <br>
+                        <p class="date__article">Publikováno: 6. února 2021, 14:00 | Hudba</p>
+                    </div>
+                </a>
+                <div class="card__info">
+                    <div>
+                        <i class="material-icons" style="">thumb_up</i>1
+                        <i style="padding-right: 10px"></i>
+                        <i class="material-icons">thumb_down</i>1
+                    </div>
+                    <div>
+                    </div>
+                </div>
+            </div>
+            <div class="card blog__item for">
+                <a href="">
+                    <img class="card__image" src="img/picture-blog-3.jpg" alt="">
+                    <div class="card__content">
+                        <h2>Lorem Ipsum</h2>
+                        <br>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos ducimus id ab tenetur delectus reiciendis fugit autem qui at.
+                        </p>
+                        <p>
+                            Alias itaque praesentium eum, pariatur consequatur ducimus asperiores accusantium velit minima?
+                        </p>
+                        <br>
+                        <p class="date__article">Publikováno: 6. února 2021, 14:00 | Nedělní fór</p>
+                    </div>
+                </a>
+                <div class="card__info">
+                    <div>
+                        <i class="material-icons" style="">thumb_up</i>1
+                        <i style="padding-right: 10px"></i>
+                        <i class="material-icons">thumb_down</i>1
+                    </div>
+                    <div>
+                    </div>
+                </div>
+            </div>
+            <div class="card blog__item povidky">
+                <a href="">
+                    <img class="card__image" src="img/picture-blog-4.jpg" alt="">
+                    <div class="card__content">
+                        <h2>Lorem Ipsum</h2>
+                        <br>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos ducimus id ab tenetur delectus reiciendis fugit autem qui at.
+                        </p>
+                        <p>
+                            Alias itaque praesentium eum, pariatur consequatur ducimus asperiores accusantium velit minima?
+                        </p>
+                        <br>
+                        <p class="date__article">Publikováno: 6. února 2021, 14:00 | Povídky</p>
+                    </div>
+                </a>
+                <div class="card__info">
+                    <div>
+                        <i class="material-icons" style="">thumb_up</i>1
+                        <i style="padding-right: 10px"></i>
+                        <i class="material-icons">thumb_down</i>1
+                    </div>
+                    <div>
+                    </div>
+                </div>
+            </div>
+            <div class="card blog__item historie">
+                <a href="">
+                    <img class="card__image" src="img/picture-blog-5.jpg" alt="">
+                    <div class="card__content">
+                        <h2>Lorem Ipsum</h2>
+                        <br>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos ducimus id ab tenetur delectus reiciendis fugit autem qui at.
+                        </p>
+                        <p>
+                            Alias itaque praesentium eum, pariatur consequatur ducimus asperiores accusantium velit minima?
+                        </p>
+                        <br>
+                        <p class="date__article">Publikováno: 6. února 2021, 14:00 | Historie blogu</p>
+                    </div>
+                </a>
+                <div class="card__info">
+                    <div>
+                        <i class="material-icons" style="">thumb_up</i>1
+                        <i style="padding-right: 10px"></i>
+                        <i class="material-icons">thumb_down</i>1
+                    </div>
+                    <div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        
+       </div>
+       
+       
+    </main>
+    
+    
+    <footer>
+        <img class="logo" src="img/mates_logo.png" alt="Matesův pohled logo">
+        <ul class="footerLinks">
+                <li><a href="#">O mně</a></li>
+                <li><a href="#">O Blogu</a></li>
+                <li><a href="#">Kontakt</a></li>
+        </ul>
+        <h5>Web vytvořil FallingFox, Adam Koiš, Masterik</h5>
+    </footer>
+
+
+    <script src="script.js" type="text/javascript"></script>
+</body>
+
+</html>
